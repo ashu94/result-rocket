@@ -1,0 +1,123 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity"
+    android:background="@drawable/university" >
+<RelativeLayout 
+         android:layout_width="fill_parent"
+     android:layout_height="wrap_content" >
+    
+    <Button
+        android:id="@+id/sharda"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="61dp"
+        android:autoLink="web"
+        android:textStyle="bold"
+        android:clickable="true"
+        android:linksClickable="true"
+        android:onClick="SHARDA"
+        android:text="Sharda University" />
+    <Button
+        android:id="@+id/mtu"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sharda"
+        android:layout_centerHorizontal="true"
+        android:autoLink="web"
+        android:textStyle="bold"
+        android:clickable="true"
+        android:linksClickable="true"
+        android:onClick="MTU"
+        android:scrollHorizontally="true"
+        android:text="Mahamaya Technical University" />
+
+    <Button
+        android:id="@+id/gbtu"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mtu"
+        android:layout_centerHorizontal="true"
+        android:autoLink="web"
+        android:textStyle="bold"
+        android:clickable="true"
+        android:linksClickable="true"
+        android:onClick="GBTU"
+        android:text="Gautam Budha Tecnical University" />
+
+    <Button
+        android:id="@+id/ip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gbtu"
+        android:layout_centerHorizontal="true"
+        android:autoLink="web"
+        android:clickable="true"
+        android:textStyle="bold"
+        android:linksClickable="true"
+        android:onClick="IP"
+        android:text="Indraprastha University" />
+
+    
+      <Button
+        android:id="@+id/mdu"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/ip"
+        android:autoLink="web"
+        android:clickable="true"
+        android:linksClickable="true"
+        android:onClick="MDU"
+        android:textStyle="bold"
+        android:text="Maharishi Dayanand University" />
+      
+      
+      <Button
+        android:id="@+id/du"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/mdu"
+        android:autoLink="web"
+        android:clickable="true"
+        android:linksClickable="true"
+        android:onClick="DU"
+        android:text="Delhi University"
+        android:textStyle="bold" />
+      
+      
+      <Button
+        android:id="@+id/lpu"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/du"
+        android:autoLink="web"
+        android:clickable="true"
+        android:linksClickable="true"
+        android:onClick="LPU"
+        android:text="Lovely Professional University"
+        android:textStyle="bold" />
+      
+       <Button
+        android:id="@+id/other"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/lpu"
+        android:autoLink="web"
+        android:clickable="true"
+        android:linksClickable="true"
+        android:onClick="OTHER"
+        android:text="OTHERS"
+        android:textStyle="bold"/>
+    
+</RelativeLayout>
+</ScrollView>

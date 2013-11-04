@@ -1,0 +1,68 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity"
+    android:background="@drawable/school"  >
+    
+   <RelativeLayout 
+         android:layout_width="fill_parent"
+     android:layout_height="wrap_content">
+
+     <Button
+        android:id="@+id/icse"
+        android:layout_width="fill_parent"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/cbse"
+        android:autoLink="web"
+        android:clickable="true"
+        android:linksClickable="true"
+        android:onClick="ICSE"
+        android:text="ICSE" />
+     
+      <Button
+         android:id="@+id/nios"
+         android:textStyle="bold"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/icse"
+         android:autoLink="web"
+         android:clickable="true"
+         android:linksClickable="true"
+         android:onClick="NIOS"
+         android:text="NIOS" />
+
+      <Button
+          android:id="@+id/other"
+          android:textStyle="bold"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/nios"
+          android:autoLink="web"
+          android:clickable="true"
+          android:linksClickable="true"
+          android:onClick="OTHER"
+          android:text="OTHER" />
+
+      <Button
+          android:id="@+id/cbse"
+          android:textStyle="bold"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:layout_alignLeft="@+id/icse"
+          android:layout_alignParentTop="true"
+          android:layout_marginTop="80dp"
+          android:autoLink="web"
+          android:clickable="true"
+          android:linksClickable="true"
+          android:onClick="CBSE"
+          android:text="CBSE" />
+
+</RelativeLayout>
+</ScrollView>

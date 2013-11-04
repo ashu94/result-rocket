@@ -1,0 +1,94 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity"
+    android:background="@drawable/comp">
+<RelativeLayout 
+     android:layout_width="fill_parent"
+     android:layout_height="wrap_content">
+    <Button
+        android:id="@+id/upsc"
+        android:layout_width="fill_parent"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="53dp"
+        android:autoLink="web"
+        android:clickable="true"
+        android:linksClickable="true"
+        android:onClick="UPSC"
+        android:text="UPSC"/> 
+
+	<Button    
+    	android:id="@+id/gate"
+    	android:textStyle="bold"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/upsc"
+        android:autoLink="web"
+        android:clickable="true"
+        android:linksClickable="true"
+        android:onClick="GATE"
+        android:text="GATE" />
+	
+	<Button    
+    	android:id="@+id/aieee"
+    	android:textStyle="bold"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/gate"
+        android:autoLink="web"
+        android:clickable="true"
+        android:linksClickable="true"
+        android:onClick="AIEEE"
+        android:text="AIEEE" />
+
+	<Button    
+    	android:id="@+id/upsee"
+    	android:textStyle="bold"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/aieee"
+        android:autoLink="web"
+        android:clickable="true"
+        android:linksClickable="true"
+        android:onClick="UPSEE"
+        android:text="UPSEE" />
+	
+	<Button    
+    	android:id="@+id/bankpo"
+    	android:textStyle="bold"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/upsee"
+        android:autoLink="web"
+        android:clickable="true"
+        android:linksClickable="true"
+        android:onClick="BANK_PO"
+        android:text="BANK PO" />
+	
+	<Button    
+    	android:id="@+id/other"
+    	android:textStyle="bold"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/bankpo"
+        android:autoLink="web"
+        android:clickable="true"
+        android:linksClickable="true"
+        android:onClick="OTHER"
+        android:text="OTHER" />
+	
+     </RelativeLayout>
+     </ScrollView>

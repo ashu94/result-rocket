@@ -1,0 +1,72 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity"
+    android:background="@drawable/result">
+	
+    <RelativeLayout 
+         android:layout_width="fill_parent"
+     android:layout_height="wrap_content">
+    
+    <Button
+        android:id="@+id/university"
+        android:textStyle="bold"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:clickable="true"
+        android:linksClickable="true"
+        android:onClick="university"
+        android:scrollHorizontally="true"
+        android:text="UNIVERSITY RESULT"
+        android:name=".myintent" />
+    
+     <Button
+        android:id="@+id/school"
+        android:textStyle="bold"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/university"
+        android:layout_centerHorizontal="true"
+        android:clickable="true"
+        android:linksClickable="true"
+        android:scrollHorizontally="true"
+        android:text="SCHOOL RESULT" />
+     
+      <Button
+        android:id="@+id/comp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/school"
+        android:layout_centerHorizontal="true"
+        android:clickable="true"
+        android:textStyle="bold"
+        android:linksClickable="true"
+        android:onClick="competitive"
+        android:scrollHorizontally="true"
+        android:text="COMPETITIVE RESULT"
+ 	/>
+      
+      <Button
+        android:id="@+id/other"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/comp"
+        android:layout_centerHorizontal="true"
+        android:clickable="true"
+        android:textStyle="bold"
+        android:linksClickable="true"
+        android:onClick="OTHER"
+        android:scrollHorizontally="true"
+        android:text="OTHER RESULT"
+ 	/>
+</RelativeLayout>
+</ScrollView>
